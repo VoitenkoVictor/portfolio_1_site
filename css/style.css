@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+:root{
+    --color-accent: #34547A;
+    --color-silver: #EEEFF1;
+}
+.text-h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+}
+.text-p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/* Первый скрин */
+.header {
+    padding-top: 50px;
+    padding-bottom: 146px;
+    background-color: var(--color-silver);
+}
+.logo{
+    width: 87px;
+    height: 60px;
+}
+.header__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .screen__flex-item {
+}
+.screen-flexV2 {
+} */
+.menu {
+    text-decoration: none;
+    margin-right: 42px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 17px;
+    letter-spacing: 0.03em;
+}
+.menu:last-child{
+    margin-right: 12px;
+}
+.menu:hover {
+    color:var(--color-accent);
+    font-weight: 500;
+}
+
+.flex_cont {
+    padding-top: 140px;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 81px;
+    padding-top: 140px;
+}
+.COMP {
+    margin-right: 131px;
+    padding-top: 22px;
+}
+.flex__cont_items {
+}
+.text-h4_screen {
+    margin-bottom: 46px;
+}
+.text-p_screen{
+    letter-spacing: 0.06em;
+    line-height: 24px;
+    max-width: 540px;
+    color: gray;
+    margin-bottom: 57px;
+}
+.header_btn {
+    width: 225px;
+    height: 65px;
+    /* padding: 25px 41px; */
+    background-color: var(--color-accent);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+
+
+/* ОБО МНЕ */
+.about {
+    padding-top: 119px;
+    padding-bottom: 92px;
+    text-align: center;
+}
+.text_about_h4 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 38px;
+}
+.text_about_p {
+    margin: 0 auto;
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+
+/* PROJECTS */
+.projects{
+    padding-top: 74px;
+    padding-bottom: 83px;
+    background-color: var(--color-accent);
+}
+.projects__flex {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+}
+.projects__flex-item {
+    display: flex;
+}
+.project-photo {
+    padding-top: 8px;
+    margin-right: 20px;
+}
+.text_project {
+    color: white;
+}
+.number_proj {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: -11px;
+    margin-top: 27px;
+}
+/* .text-proj {
+}
+ */

@@ -128,7 +128,6 @@ img {
 .header_btn {
     width: 225px;
     height: 65px;
-    /* padding: 25px 41px; */
     background-color: var(--color-accent);
     color: white;
     text-transform: uppercase;
@@ -248,7 +247,7 @@ img {
 .video {
     background-color: var(--color-silver);
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 106px;
 }
 
 .video__content-title {
@@ -287,4 +286,104 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+
+
+/* PORTFOLIO */
+.projectsV2 {
+    padding-top: 1px;
+    padding-bottom: 72px;
+}
+
+.projects__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 480px;
+    background-size: cover;
+    position: relative;
+
+}
+
+.projects__gallery-card {
+    /*     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 480px; */
+    background-image: url(../img/writing.jpg);
+    background-repeat: no-repeat;
+    /*     background-size: cover;
+    position: relative; */
+}
+
+.projects__gallery-card:nth-child(2) {
+    background-image: url(../img/comping.jpg);
+}
+
+.projects__gallery-card:nth-child(4) {
+    background-image: url(../img/comping.jpg);
+}
+
+.projects__gallery-card:nth-child(5) {
+    background-image: url(../img/comping.jpg);
+}
+
+.projects__gallery-card:nth-child(7) {
+    background-image: url(../img/comping.jpg);
+}
+
+.card_view-icon {
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #34547A;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+.card:hover .card_view-icon {
+    opacity: 1;
+}
+
+.card:hover .overlay {
+    opacity: 0.8;
+}
+
+
+
+@media screen and (max-width: 1920px) {
+    .card {
+        width: 100%;
+        height: 25vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .projects__gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+    }
+    .card {
+        height: 50vw;
+    }
 }
